@@ -10,36 +10,32 @@ Automatically identify people in photos and share images with the right individu
 - **Storage**: Local filesystem (can migrate to S3 later)
 - **Frontend**: React (simple web interface)
 
-## Team Allocation (2 people)
 
-### Person 1: Backend + ML Pipeline
+
 - Face detection and recognition
 - API endpoints
 - Database setup
 - Photo processing pipeline
 
-### Person 2: Frontend + Integration
+
 - React UI for upload/view
 - User authentication
 - Integration with backend APIs
 - Testing and bug fixes
 
-## Project Timeline (3 weeks MVP)
 
-### Week 1: Core Foundation
-- Day 1-2: Project setup, database schema, basic API structure
-- Day 3-4: Face detection and embedding generation
-- Day 5-7: Face matching and photo tagging logic
+  Project setup, database schema, basic API structure
+   Face detection and embedding generation
+   Face matching and photo tagging logic
 
-### Week 2: Features
-- Day 8-10: User registration and face enrollment
-- Day 11-12: Bulk photo upload and processing
-- Day 13-14: Photo gallery and sharing logic
 
-### Week 3: Polish
-- Day 15-17: UI improvements, error handling
-- Day 18-19: Testing with real data
-- Day 20-21: Deploy and gather feedback
+   User registration and face enrollment
+   Bulk photo upload and processing
+  Photo gallery and sharing logic
+
+  UI improvements, error handling
+  Testing with real data
+ Deploy and gather feedback
 
 ## Quick Start
 
