@@ -1,0 +1,10 @@
+start.sh
+frontend/
+uploads/
+*.db
+.git/
+__pycache__/
+venv/
+*.pyc
+.env
+node_modules/
