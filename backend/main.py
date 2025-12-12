@@ -31,14 +31,15 @@ face_service = FaceRecognitionService()
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 # Directories
-UPLOAD_DIR = "../uploads/originals"
-FACES_DIR = "../uploads/faces"
-THUMBNAIL_DIR = "../uploads/thumbnails"
+# Directories - use /tmp for Railway deployment
+import os as os_module
+UPLOAD_DIR = os_module.getenv("UPLOAD_DIR", "/tmp/uploads/originals")
+FACES_DIR = os_module.getenv("FACES_DIR", "/tmp/uploads/faces")
+THUMBNAIL_DIR = os_module.getenv("THUMBNAIL_DIR", "/tmp/uploads/thumbnails")
 
-os.makedirs(UPLOAD_DIR, exist_ok=True)
-os.makedirs(FACES_DIR, exist_ok=True)
-os.makedirs(THUMBNAIL_DIR, exist_ok=True)
-
+os_module.makedirs(UPLOAD_DIR, exist_ok=True)
+os_module.makedirs(FACES_DIR, exist_ok=True)
+os_module.makedirs(THUMBNAIL_DIR, exist_ok=True)
 # Pydantic models for request/response
 class UserRegister(BaseModel):
     name: str
